@@ -38,19 +38,19 @@ paths, etc.) then read on.
 There's a pretty robust install script at
 <https://www.npmjs.com/install.sh>.  You can download that and run it.
 
-Here's an example using curl:
+Here's an example using curl (don't forget to make that under root):
 
-    curl -L https://npmjs.com/install.sh | sh
+    curl -L https://npmjs.com/install.sh | sudo sh
 
 ### Slightly Fancier
 
 You can set any npm configuration params with that script:
 
-    npm_config_prefix=/some/path sh install.sh
+    sudo npm_config_prefix=/some/path sh install.sh
 
 Or, you can run it in uber-debuggery mode:
 
-    npm_debug=1 sh install.sh
+    sudo npm_debug=1 sh install.sh
 
 ### Even Fancier
 
